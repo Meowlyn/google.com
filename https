@@ -1,3 +1,5 @@
-for ($i = 1; $i -le 1000; $i++) {
-    Write-Host $i
-}
+$desktopPath = [Environment]::GetFolderPath("Desktop")
+$fileName = "Bomb.txt"
+$filePath = Join-Path -Path $desktopPath -ChildPath $fileName
+Set-Content -Path $filePath -Value "Бомба сброшена!"
+Invoke-Item -Path $filePath
